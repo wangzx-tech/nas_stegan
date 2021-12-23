@@ -2,8 +2,9 @@
 
 ## **Getting Started**
 ### Datasets
-    CIFAR10
-    ImageNet can find [here](http://www.image-net.org/).
+CIFAR10
+
+ImageNet can find [here](http://www.image-net.org/).
 
 ```
 ### for searching
