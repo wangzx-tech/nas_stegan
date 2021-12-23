@@ -1,11 +1,12 @@
 # nas_stegan
 
-## **Getting Started**
-### Datasets
+## Datasets
 CIFAR10
 
 ImageNet can find [here](http://www.image-net.org/).
 
+## Experiments
+You need to add your file path in the code file first. Then run the following commands.
 ```
 ### for searching
 python main_nas.py
