@@ -24,9 +24,9 @@ python main.py --mode test --test_ckpt 'your file path'
 
 ## Pre-trained weights
 Coming soon.
-------
+<!------
 Pre-trained weights can be accessed here(). 
-------
+------>
 
 ## **Acknowledgments**
 Codes are heavily borrowed from [UDH](https://github.com/ChaoningZhang/Universal-Deep-Hiding.git) and [PC-DARTS](https://github.com/yuhuixu1993/PC-DARTS.git).
