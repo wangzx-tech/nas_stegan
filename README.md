@@ -2,14 +2,16 @@
 
 ## **Getting Started**
 ### Datasets
-CIFAR10
-ImageNet can find [here](http://www.image-net.org/).
+    CIFAR10
+    ImageNet can find [here](http://www.image-net.org/).
 
 ```
 ### for searching
 python main_nas.py
+
 ### for training
 python main.py
+
 ### for testing
 python main.py --mode test
 ```
