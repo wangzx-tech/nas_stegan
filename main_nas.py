@@ -192,7 +192,7 @@ def train(train_queue, valid_queue, model, reveal_net, optimizer, optimizer_arch
         cover_img_search = cover_img_search.cuda(non_blocking=True)
         secret_img_search = secret_img_search.cuda(non_blocking=True)
 
-        # x个epoch之后每个batch更新一次架构参数
+        # begin update architecture weights for each batch after * epoch
         if epoch >= args.begin:
             optimizer_arch.zero_grad()
             stega_img_search = model(secret_img_search) + cover_img_search
@@ -217,7 +217,7 @@ def train(train_queue, valid_queue, model, reveal_net, optimizer, optimizer_arch
         loss = loss_hide + 0.75 * loss_reveal
         loss.backward()
 
-        nn.utils.clip_grad_norm_(model.module.parameters(), args.grad_clip)  # 梯度截断
+        nn.utils.clip_grad_norm_(model.module.parameters(), args.grad_clip)
         optimizer.step()
 
         # update loss
